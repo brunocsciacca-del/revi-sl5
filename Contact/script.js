@@ -11,3 +11,11 @@ function fechar(){
     var sanduiche = document.getElementById('wrap-open')
     sanduiche.style.display = 'flex'
 }
+
+function enviar(){
+    const nome = document.getElementById('nome').value
+    const assunto = document.getElementById('assunto').value
+    const msg = `gostaria de entrar em contato!\n\nNome:${nome}\nAssunto:${assunto}`
+    const msgTransformada = encodeURIComponent(msg)
+    window.open(`https://wa.me/5541999999999`)
+}

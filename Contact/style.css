@@ -14,6 +14,12 @@ nav{
     width: 100%;
     background-color: #ffffff;
 }
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
 .nav-item{
     display: flex;
@@ -45,12 +51,70 @@ nav{
     display: none;
 }
 
+.formulario{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 12px #00000000;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 250px;
+    width: 250px;
+}
+
+.warp-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+label{
+    font-size: 15px;
+    margin-top: 2vh;
+}
+
+input{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+button{
+    padding: 10px;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 10px;
+    transition: all 200ms ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+
+}
+
+.formulario img{
+    position: absolute;
+    width: 55px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -55px;
+    top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 1px 4px #000053;
+
+}
 
 @media (width <= 1000px){
     nav{
         display: none;
     }
-    .wrap-open{
+    .warp-open{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,11 +128,11 @@ nav{
         transition: all 200ms ease-in-out;
         border-radius: 5px;
     }
-    .wrap-open:hover{
+    .warp-open:hover{
         cursor: pointer;
         opacity: 1;
     }
-    .wrap-open img{
+    .warp-open img{
         display: flex;
         width: 35px;
     }
